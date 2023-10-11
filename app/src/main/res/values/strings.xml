@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Academia_multiTelas</string>
+    <string name="Titulo">Academia corpo de viola</string>
+    <string name="peso">Informe seu peso</string>
+    <string name="altura">Informe sua altura</string>
+    <string name="Calc_IMC">Calcular IMC</string>
+    <string name="ResultadoIMC">Resultado do IMC </string>
+    <string name="EsteiraHora">Informe quantas horas na esteira!</string>
+    <string name="calcular">Calcular</string>
+    
+</resources>

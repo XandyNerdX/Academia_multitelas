@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradiente_fundo"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <EditText
+        android:id="@+id/peso"
+        style="@style/Edit_Text"
+        android:layout_width="match_parent"
+
+        android:layout_height="70sp"
+        android:autofillHints=""
+        android:drawableEnd="@mipmap/ic_peso_foreground"
+        android:inputType="number"
+        android:text="@string/peso"
+        android:textAlignment="center"
+
+        android:textAllCaps="true"
+
+        android:textColor="@color/cinza_escuro"
+        android:textSize="18sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50sp"/>
+
+    <EditText
+        android:id="@+id/altura"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+
+        android:text="@string/altura"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/cinza_escuro"
+
+        android:drawableEnd="@mipmap/ic_altura_foreground"
+
+        android:inputType="number"
+        style="@style/Edit_Text"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/peso"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Button_calcIMC"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:text="@string/Calc_IMC"
+        android:backgroundTint="@color/blue_dark"
+        android:textColor="@color/blue_light"
+
+        app:layout_constraintTop_toBottomOf="@+id/altura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20sp"
+        />
+
+    <TextView
+        android:id="@+id/ResultadoIMC"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+
+        android:text="@string/ResultadoIMC"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/cinza_escuro"
+
+        android:drawableEnd="@mipmap/ic_imc_foreground"
+
+        android:inputType="number"
+        style="@style/Edit_Text"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Button_calcIMC"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@mipmap/ic_buttonvoltar_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="0sp"
+        app:layout_constraintTop_toTopOf="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
